@@ -168,7 +168,7 @@ Installation et Configuration
 
 ---
 
-## 🚀 Lancement de l'Application
+## Lancement de l'Application
 
 ### Procédure Complète
 
@@ -207,7 +207,7 @@ npm start
 
 ---
 
-## 📁 Structure du Projet
+## Structure du Projet
 
 ```
 quizapp/
@@ -261,7 +261,7 @@ quizapp/
 
 ---
 
-## 🔌 API REST
+## API REST
 
 ### Endpoints
 
@@ -318,7 +318,7 @@ Où `"1": 1` signifie "Question 1, Réponse 1".
 
 ---
 
-## 📖 Utilisation
+## Utilisation
 
 ### Flux Utilisateur
 
@@ -359,7 +359,7 @@ Frontend: Affiche score final
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Port déjà utilisé
 ```bash
@@ -400,7 +400,7 @@ npm start
 
 ---
 
-## 📊 Données du Quiz
+## Données du Quiz
 
 L'application inclut **20 questions** sur le Burkina Faso :
 
@@ -419,22 +419,22 @@ Chaque question a **4 options de réponse**, dont **une seule est correcte**.
 
 ---
 
-## 📝 Notes de Développement
+## Notes de Développement
 
 ### Sécurité
-- ✅ Logique de calcul du score côté **serveur** (impossible à tricher)
-- ✅ Les réponses correctes ne sont **jamais** envoyées au frontend
-- ✅ Validation côté serveur des réponses soumises
+- Logique de calcul du score côté **serveur** (impossible à tricher)
+- Les réponses correctes ne sont **jamais** envoyées au frontend
+- Validation côté serveur des réponses soumises
 
 ### Scalabilité
-- ✅ Architecture microservices prête
-- ✅ Séparation des couches (Controller → Service → Repository)
-- ✅ DTOs pour découpler les entités JPA
+- Architecture microservices prête
+- Séparation des couches (Controller → Service → Repository)
+- DTOs pour découpler les entités JPA
 
 ### Performance
-- ✅ Lazy loading des associations JPA
-- ✅ Requêtes optimisées
-- ✅ State management efficient avec React Hooks
+- Lazy loading des associations JPA
+- Requêtes optimisées
+- State management efficient avec React Hooks
 
 ---
 
