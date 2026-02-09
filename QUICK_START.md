@@ -141,7 +141,3 @@ quizapp/
 - **Backend** : http://localhost:8080
 - **API Quiz** : http://localhost:8080/api/quiz
 - **API Submit** : http://localhost:8080/api/quiz/submit (POST)
-
----
-
-**La plupart des problèmes se résolvent en 2-3 redémarrages !**
