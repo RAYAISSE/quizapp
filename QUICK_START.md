@@ -1,16 +1,16 @@
-# ⚡ GUIDE DE DÉMARRAGE RAPIDE - QuizApp
+# GUIDE DE DÉMARRAGE RAPIDE - QuizApp
 
-## 🎯 Avant de Commencer (5 minutes)
+## Avant de Commencer (5 minutes)
 
 ### Vérifiez que vous avez :
-1. ✅ Java 17+ installé : `java -version`
-2. ✅ Node.js installé : `node -v`
-3. ✅ PostgreSQL installé et lancé
-4. ✅ npm installé : `npm -v`
+1. Java 17+ installé : `java -version`
+2. Node.js installé : `node -v`
+3. PostgreSQL installé et lancé
+4. npm installé : `npm -v`
 
 ---
 
-## 🔧 Étape 1 : Configuration de la Base de Données (5 minutes)
+## Étape 1 : Configuration de la Base de Données (5 minutes)
 
 ### Windows (pgAdmin ou pgAdmin4)
 1. Ouvrir **pgAdmin**
@@ -30,7 +30,7 @@ psql -U postgres -d quizapp -f database.sql
 
 ---
 
-## 🚀 Étape 2 : Démarrer l'Application
+## Étape 2 : Démarrer l'Application
 
 ### Option A : Windows (Plus simple)
 **Double-cliquer sur** : `start.bat`
@@ -60,7 +60,7 @@ Attendez que le navigateur s'ouvre sur `http://localhost:3000`
 
 ---
 
-## ✅ Vérifications
+## Vérifications
 
 ### Backend actif ?
 - Visitez : http://localhost:8080/api/quiz
@@ -75,7 +75,7 @@ Attendez que le navigateur s'ouvre sur `http://localhost:3000`
 
 ---
 
-## 🎮 Test du Quiz
+## Test du Quiz
 
 1. Cliquer sur "Démarrer le Quiz"
 2. Répondre aux 20 questions
@@ -84,7 +84,7 @@ Attendez que le navigateur s'ouvre sur `http://localhost:3000`
 
 ---
 
-## ❌ Problèmes Courants
+## Problèmes Courants
 
 ### Port 8080 déjà utilisé
 ```bash
@@ -116,7 +116,7 @@ mvn install
 
 ---
 
-## 📋 Fichiers Importants
+## Fichiers Importants
 
 ```
 quizapp/
@@ -135,21 +135,12 @@ quizapp/
 
 ---
 
-## 🔑 URLs Importantes
+## URLs Importantes
 
 - **Frontend** : http://localhost:3000
 - **Backend** : http://localhost:8080
 - **API Quiz** : http://localhost:8080/api/quiz
 - **API Submit** : http://localhost:8080/api/quiz/submit (POST)
-
----
-
-## 📞 Besoin d'Aide ?
-
-Consultez :
-1. **Détails techniques** → `README.md`
-2. **Résumé complet** → `PROJECT_SUMMARY.md`
-3. **Documentation API** → Section API du README
 
 ---
 
