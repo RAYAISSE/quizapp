@@ -1,6 +1,6 @@
 # GUIDE DE DÉMARRAGE RAPIDE - QuizApp
 
-## Avant de Commencer (5 minutes)
+## Avant de Commencer
 
 ### Vérifiez que vous avez :
 1. Java 17+ installé : `java -version`
@@ -10,7 +10,7 @@
 
 ---
 
-## Étape 1 : Configuration de la Base de Données (5 minutes)
+## Étape 1 : Configuration de la Base de Données
 
 ### Windows (pgAdmin ou pgAdmin4)
 1. Ouvrir **pgAdmin**
