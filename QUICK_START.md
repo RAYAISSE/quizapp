@@ -144,4 +144,4 @@ quizapp/
 
 ---
 
-**La plupart des problèmes se résolvent en 2-3 redémarrages ! 🔄**
+**La plupart des problèmes se résolvent en 2-3 redémarrages !**
