@@ -1,0 +1,147 @@
+LIVRABLE - QUIZAPP
+================================
+
+Date : 8 février 2026
+Status : TERMINÉ ET PRÊT À L'EMPLOI
+════════════════════════════════════════════════════════════════════════════════
+
+1. BACKEND SPRING BOOT
+
+Fichiers (13 fichiers):
+QuizAppApplication.java         - Classe principale Spring Boot
+QuestionController.java         - Endpoints /api/quiz et /api/quiz/submit
+QuizService.java                - Logique métier (calcul du score)
+Question.java                   - Entité JPA
+Answer.java                     - Entité JPA avec @ManyToOne
+QuestionRepository.java         - Accès aux données
+AnswerRepository.java           - Accès aux données
+QuestionDTO.java                - Transfert de données
+AnswerDTO.java                  - Transfert de données
+SubmitAnswersDTO.java           - Réception des réponses
+ScoreResponseDTO.java           - Réponse du score
+pom.xml                         - Dépendances Maven
+application.properties          - Configuration
+
+Fonctionnalités :
+GET /api/quiz                   - Retourne 20 questions SANS réponses correctes
+POST /api/quiz/submit           - Calcule le score côté serveur
+CORS activé                     - Communication frontend ↔ backend
+Base de données PostgreSQL      - Full JPA integration
+Sécurité                        - Impossible de tricher
+
+════════════════════════════════════════════════════════════════════════════════
+
+2. FRONTEND REACT
+
+Fichiers (8 fichiers) :
+App.js                          - Composant racine, gestion d'état
+Home.js                         - Écran d'accueil / Démarrage
+Quiz.js                         - Gestion du quiz, navigation
+Results.js                      - Affichage des résultats
+Question.js                     - Composant réutilisable
+index.js                        - Point d'entrée React
+App.css                         - Styles de l'application
+index.css                       - Styles globaux + responsive
+index.html                      - Template HTML
+package.json                    - Dépendances npm
+
+Fonctionnalités :
+Interface moderne et attractive
+Design responsive (mobile-friendly)
+Navigation fluide entre questions
+Barre de progression
+Calcul du pourcentage
+Gestion des erreurs
+Loading states
+React Hooks (useState, useEffect)
+Axios pour communication HTTP
+
+════════════════════════════════════════════════════════════════════════════════
+
+3. BASE DE DONNÉES
+
+Fichier : database.sql
+Table : question (id, text, category)
+Table : answer (id, text, is_correct, question_id)
+Relations : Foreign Key answer → question
+Données : 20 questions pré-chargées
+Qualité : Format standard PostgreSQL
+
+Questions par catégorie :
+- Géographie : 3 questions
+- Histoire : 2 questions
+- Politique : 2 questions
+- Culture : 5 questions
+- Société : 2 questions
+- Économie : 4 questions
+- Sport : 1 question
+Total : 20 questions × 4 réponses = 80 entrées
+
+════════════════════════════════════════════════════════════════════════════════
+
+4. DOCUMENTATION
+
+Fichiers :
+README.md
+  - Table des matières
+  - Fonctionnalités détaillées
+  - Architecture technique
+  - Prérequis
+  - Installation étape par étape
+  - Lancement
+  - Structure du projet
+  - Documentation API complète
+  - Exemples d'utilisation
+  - Troubleshooting
+  - Notes de sécurité
+
+════════════════════════════════════════════════════════════════════════════════
+
+5. SCRIPTS D'AUTOMATISATION
+
+start.bat                       - Démarrage automatisé (Windows)
+start.sh                        - Démarrage automatisé (Linux/Mac)
+.gitignore (backend)            - Pour version control
+.gitignore (frontend)           - Pour version control
+
+════════════════════════════════════════════════════════════════════════════════
+
+Technology Stack :
+- Java 17
+- Spring Boot 3.1.0
+- React 18.2.0
+- PostgreSQL 12+
+- Maven
+- npm
+
+════════════════════════════════════════════════════════════════════════════════
+
+ETAPES POUR L'UTILISATEUR
+
+1. Importer la base de données :
+   psql -U postgres -d quizapp -f database.sql
+
+2. Lancer le backend :
+   cd backend
+   mvn spring-boot:run
+
+3. Lancer le frontend :
+   cd frontend
+   npm install
+   npm start
+
+4. Ouvrir le navigateur :
+   http://localhost:3000
+
+5. Tester le quiz :
+   - Cliquer "Démarrer le Quiz"
+   - Répondre aux 20 questions
+   - Voir le score
+
+════════════════════════════════════════════════════════════════════════════════
+
+SÉCURITÉ
+
+ - Score calculé côté serveur
+ - Les bonnes réponses ne sont jamais envoyées au frontend
+ - Validation côté serveur des réponses soumises
